@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .copy {
+        font-family: $textFont;
+        font-size: 1.2vh;
+    }
+}
+
+.socials {
+    height: 100%;
+    cursor: pointer;
+    transition: .3s;
+
+
+
+    img {
+        height: 100%;
+
+        &:hover {
+            filter: brightness(80%);
+        }
+    }
+}

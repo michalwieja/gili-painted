@@ -1,0 +1,248 @@
+@import './sass/header';
+@import './sass/variables';
+@import './sass/footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.giliFont {
+    font-family: $giliFont;
+    font-size: 3vh;
+}
+
+
+#aboutState {
+    display: none;
+}
+
+.read-more {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.section__content .read-more {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'wiecej';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'mniej';
+}
+
+.read-more-trigger {
+    font-family: $giliFont;
+    cursor: pointer;
+    color: #222;
+    font-size: 3vh;
+    line-height: 2;
+    z-index: 100;
+
+    &:hover {
+        animation: anime 1s linear infinite;
+        transform-origin: 50% 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.section {
+    // height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+
+
+    &__img {
+        width: 30%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(3deg);
+
+        img {
+            height: 50%;
+        }
+    }
+
+    &__text {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 5vh;
+        font-family: $giliFont;
+        color: $darkRed;
+        margin-bottom: 10vh;
+    }
+
+    &__content {
+        font-family: $textFont;
+        font-size: 2.5vh;
+        text-align: justify;
+    }
+}
+
+.about {
+
+    img {
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url('./img/tecza.png');
+            background-size: 100% 100%;
+            height: 100px;
+            width: 100px;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 100%;
+            transform: rotate(-20deg);
+        }
+    }
+
+    .section__content {
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: url('./img/rakieta.png');
+            background-size: 100% 100%;
+            height: 40%;
+            width: 20%;
+            bottom: 5%;
+            right: 5%;
+            z-index: -1;
+            transform: rotate(-20deg);
+            animation: launch 3s 3s both;
+        }
+    }
+
+    .section__title {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url('./img/kosmos.png');
+            background-size: 100% 100%;
+            height: 300%;
+            width: 200%;
+            bottom: -270%;
+            right: -220%;
+            z-index: -1;
+            opacity: 100%;
+        }
+    }
+}
+
+.birthday {
+    .section__content {
+        position: relative;
+
+        &:after {
+            content: '';
+            background-image: url('./img/fala.png');
+            background-size: 100% 100%;
+            position: absolute;
+            bottom: -70%;
+            left: 0%;
+            width: 30%;
+            height: 100%;
+        }
+    }
+
+    img {
+        height: 77%;
+    }
+
+    h4 {
+
+        position: relative;
+
+        &:before {
+            content: '';
+            background-image: url('./img/girlanda.png');
+            background-size: 100% 100%;
+            position: absolute;
+            top: -150%;
+            left: -140%;
+            width: 200%;
+            height: 400%;
+        }
+    }
+}
+
+.activities {
+
+    .section__content {
+        position: relative;
+
+        &:before {
+            content: '';
+            background-image: url('./img/kropeczki\ do\ i\ giligili.png');
+            background-size: 100% 100%;
+            position: absolute;
+            bottom: -70%;
+            right: -20%;
+            width: 50%;
+            height: 100%;
+            transform: rotate(-90deg);
+            z-index: -1;
+        }
+    }
+}
+
+.cafe {
+
+    .section__content {
+        position: relative;
+
+        &:before {
+            content: '';
+            background-image: url('./img/napoj_owoc.png');
+            background-size: 100% 100%;
+            position: absolute;
+            bottom: -70%;
+            right: 0;
+            width: 20%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+}
+
+@keyframes launch {
+    from {
+        bottom: -120%;
+        transform: rotate(20deg);
+    }
+}
