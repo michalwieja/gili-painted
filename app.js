@@ -25,12 +25,3 @@ const navSlide = () => {
 }
 
 navSlide();
-
-// showMore 
-
-const btn = document.querySelector('.more');
-const moreText = document.querySelector('.moreText');
-btn.addEventListener('click', () => {
-    moreText.classList.toggle('visible');
-
-})

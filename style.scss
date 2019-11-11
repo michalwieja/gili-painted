@@ -1,6 +1,8 @@
 @import './sass/header';
 @import './sass/variables';
 @import './sass/footer';
+@import './sass/readMore';
+
 
 * {
     margin: 0;
@@ -13,62 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.giliFont {
-    font-family: $giliFont;
-    font-size: 3vh;
-}
-
-
-#aboutState {
-    display: none;
-}
-
-.read-more {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
-}
-
-.read-more-state:checked~.section__content .read-more {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
-}
-
-.read-more-state~.read-more-trigger:before {
-    content: 'wiecej';
-}
-
-.read-more-state:checked~.read-more-trigger:before {
-    content: 'mniej';
-}
-
-.read-more-trigger {
-    font-family: $giliFont;
-    cursor: pointer;
-    color: #222;
-    font-size: 3vh;
-    line-height: 2;
-    z-index: 100;
-
-    &:hover {
-        animation: anime 1s linear infinite;
-        transform-origin: 50% 50%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
 .section {
-    // height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,9 +187,112 @@ html {
     }
 }
 
+
+
+
 @keyframes launch {
     from {
         bottom: -120%;
         transform: rotate(20deg);
+    }
+}
+
+@media screen and (max-width: $break-small) {
+    .section {
+        width: 95%;
+        margin: 0 auto;
+
+
+        &__img {
+            display: none;
+        }
+
+        &__text {
+            width: 90%;
+
+        }
+
+        &__title {
+            font-size: 4vh;
+            margin-bottom: 5vh;
+        }
+
+        &__content {
+            font-size: 2vh;
+        }
+    }
+
+    .about {
+        .section__content {
+            position: relative;
+
+            &:after {
+                height: 50%;
+                width: 50%;
+                bottom: 0%;
+                right: 0%;
+                opacity: 50%;
+            }
+        }
+
+        .section__title {
+            position: relative;
+
+            &:before {
+                height: 200%;
+                width: 150%;
+                bottom: -100%;
+                right: -150%;
+            }
+        }
+    }
+
+    .birthday {
+        .section__content {
+            &:after {
+                display: none;
+            }
+        }
+
+        h4 {
+            &:before {
+                content: '';
+                background-image: url('./img/girlanda.png');
+                background-size: 100% 100%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 200%;
+            }
+        }
+    }
+
+    .activities {
+
+        .section__content {
+            position: relative;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .cafe {
+
+        .section__content {
+            &:before {
+                content: '';
+                background-image: url('./img/napoj_owoc.png');
+                background-size: 100% 100%;
+                position: absolute;
+                top: -20%;
+                right: 0;
+                width: 20%;
+                height: 20%;
+                z-index: -1;
+            }
+        }
     }
 }

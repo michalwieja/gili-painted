@@ -1,10 +1,11 @@
 @import './variables';
 
 // hide menu when mobile 
-
 body {
     overflow-x: hidden;
 }
+
+
 
 // nav when banner 
 nav.banner {
@@ -24,6 +25,13 @@ nav.banner {
     }
 
     .nav__links {
+        visibility: hidden;
+        opacity: 0;
+        width: 0%;
+        transition: 0.5s;
+    }
+
+    .burger {
         visibility: hidden;
         opacity: 0;
         width: 0%;
@@ -79,7 +87,7 @@ nav.banner {
             position: absolute;
             right: 0;
             height: 88vh;
-            top: 8vh;
+            top: 12vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -87,6 +95,8 @@ nav.banner {
             transform: translateX(100%);
             transition: .3s;
             z-index: 2;
+            margin-right: 0%;
+
         }
     }
 
@@ -149,11 +159,13 @@ nav.banner {
         visibility: visible;
         opacity: 1;
         transition: 0.5s;
+
     }
 }
 
 .nav-active {
     transform: translateX(0);
+    background-color: #fff;
 }
 
 @keyframes navLinkFade {

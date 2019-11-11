@@ -1,0 +1,38 @@
+#aboutState {
+    display: none;
+}
+
+.read-more {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.section__content .read-more {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'wiecej';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'mniej';
+}
+
+.read-more-trigger {
+    font-family: $giliFont;
+    cursor: pointer;
+    color: #222;
+    font-size: 3vh;
+    line-height: 2;
+    z-index: 100;
+
+    &:hover {
+        animation: anime 1s linear infinite;
+        transform-origin: 50% 50%;
+    }
+}
