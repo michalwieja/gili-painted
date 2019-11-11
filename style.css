@@ -75,6 +75,12 @@ nav.banner .socials {
   margin-left: 10%;
 }
 
+@media screen and (max-width: 1400px) {
+  .nav .logo {
+    margin-left: 0;
+  }
+}
+
 .nav .logo svg {
   height: 100%;
   padding: 10px;
@@ -710,7 +716,7 @@ html {
   }
   .section__title {
     font-size: 4vh;
-    margin-bottom: 5vh;
+    margin: 5vh 0;
   }
   .section__content {
     font-size: 2vh;

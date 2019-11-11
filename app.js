@@ -14,12 +14,12 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle')
         links.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            } else {
-                link.style.animation = `navLinkFade 1.5s ease forwards ${index / 5}s`;
 
-            }
+            link.style.animation = `navLinkFade 1.5s ease forwards ${index / 5}s`;
+
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav-active');
+            })
         })
     })
 }

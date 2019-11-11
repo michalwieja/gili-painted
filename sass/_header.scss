@@ -61,6 +61,10 @@ nav.banner {
         width: 40%;
         margin-left: 10%;
 
+        @media screen and (max-width: $break-small) {
+            margin-left: 0;
+        }
+
         svg {
             height: 100%;
             padding: 10px;
