@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gili gili #fajne miejsce</title>
 
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky">
         <div class="container">
             <nav class="nav banner">
                 <div class="logo">
@@ -76,13 +76,17 @@
     </header>
 
     <section class="section about">
+        <span id="about"></span>
+        <!-- <div class="kosmos"><img src="./img/kosmos.png" alt=""></div>
+        <div class="rakieta"><img src="./img/rakieta.png" alt=""></div> -->
+
         <div class="container">
             <div class="section__img">
                 <img src="./img/domek_konewka.png" alt="domek">
             </div>
             <div class="section__text">
                 <div class="section__title">
-                    <h4 id="about">o bawialni</h4>
+                    <h4 >o bawialni</h4>
                 </div>
                 <input type="checkbox" class="read-more-state" id="aboutState" />
                 <div class="section__content">
@@ -118,21 +122,16 @@
                     </p>
                     <p class="read-more"> a teraz coś dla dzieciaków (poczytaj mi mamo /tato)
                         kawiarnia – tutaj możesz się napić pysznej lemoniady i zjeść zdrowe ciacho, a później lecieć
-                        zwiedzać
-                        bawialnie i zostawić rodziców na pysznej kawie (psst rodzice macie chwilkę dla siebie)
+                        zwiedzać bawialnie i zostawić rodziców na pysznej kawie (psst rodzice macie chwilkę dla siebie)
                         Czy te kamienie są ciężkie? Sprawdź proszę. Szzzzz szzzz zobacz co potrafi wiatr. Pokonaj
-                        makaronowy
-                        labirynt, krok, krok udało się, o! Widzisz drzewa? Czy twój nos coś wyczuwa? Puk puk , dzień
-                        dobry
-                        tu
-                        domek Giligili. Może coś ugotujemy, mniam, o ktoś zaparkował auto przed domem brrrrum, a co to?!
-                        Sprawdź
-                        koniecznie co wylądowało w ogrodzie, a i nie zapomnij podlać trawnika, dziękujemy
+                        makaronowy labirynt, krok, krok udało się, o! Widzisz drzewa? Czy twój nos coś wyczuwa? Puk puk
+                        , dzień dobry tu domek Giligili. Może coś ugotujemy, mniam, o ktoś zaparkował auto przed domem
+                        brrrrum,a co to?! Sprawdź koniecznie co wylądowało w ogrodzie, a i nie zapomnij podlać trawnika,
+                        dziękujemy
                         O zobacz, pokój urodzinowy - tutaj możesz pomyśleć swoje największe naj naj największe marzenie
-                        i
-                        zdmuchnąć świeczkę na urodzinowym torcie. Ten pokój zamienia się też w pokój artysty - może
-                        stworzysz
-                        coś z Nami. O mam świetny pomysł co ty na to żeby urządzić wielkie brudzenie? O tak my też to
+                        i zdmuchnąć świeczkę na urodzinowym torcie. Ten pokój zamienia się też w pokój artysty - może
+                        stworzysz coś z Nami. O mam świetny pomysł co ty na to żeby urządzić wielkie brudzenie? O tak my
+                        też to
                         lubimy.</p>
                 </div>
                 <label for="aboutState" class="read-more-trigger"></label>
@@ -142,6 +141,7 @@
     </section>
 
     <section class="section birthday">
+        <span id="birthday"></span>
         <div class="container">
             <div class="section__img">
                 <img src="./img/balony.png" alt="urodziny">
@@ -149,8 +149,10 @@
 
             <div class="section__text">
                 <div class="section__title">
-                    <h4 id="birthday">fajne urodziny w Gili gili</h4>
+                    <h4 >fajne urodziny w Gili gili</h4>
                 </div>
+                <input type="checkbox" class="read-more-state" id="birthdayState" />
+
                 <div class="section__content">
                     <p> Tworzymy niezwykłe urodziny dlatego oferta musi być jak najbardziej dopasowana do potrzeb
                         twojego
@@ -165,8 +167,7 @@
                         mailowo lub osobiście.
                         (ARKUSZ pobierz zobacz)</p>
 
-
-                    <!-- powyżej 10 dzieci / 50 zł osoba
+                    <p class="read-more"> powyżej 10 dzieci / 50 zł osoba
                         do 10 dzieci / 60 zł osoba
                         - opieka animatora
                         - 1,5 h mądrej animacji ( plastyczna, warsztatowa)
@@ -174,43 +175,55 @@
                         - zaproszenia
                         - wynajem przystrojenie sali urodzinowej
                         - poczęstunek dla dzieci ( woda, lemoniada lub sok, owoce sezonowe, zdrowe przekąski)
-        
+
                         dodatkowo do wyceny na życzenie zamawiającego
                         deserki w słoiczkach, zdrowe ciasteczka lub muffiny
                         tort urodzinowy dla solenizanta i małych gości
                         ciasto dla rodziców
-        
-        
+
+
                         dodatkowe atrakcje
                         - malowanie buziek 100 zł
                         - profesjonalna sesja reportażowa z urodzin 250 zł (zdjecia w wersji elektornicznej)
-                        - przystojenie sali według indywidualnego projektu ( wycena po omówieniu motywu)
-        
-        
-                        motywy urodzin
-        
-                        kosmos: Ruszamy na podbój kosmosu w naszej zbudowanej wspólnie fajniej rakiecie. Pooglądamy gwiazdy i
+                        - przystojenie sali według indywidualnego projektu ( wycena po omówieniu motywu)</p>
+
+                    <p class="read-more"> motywy urodzin
+
+                        kosmos: Ruszamy na podbój kosmosu w naszej zbudowanej wspólnie fajniej rakiecie. Pooglądamy
+                        gwiazdy i
                         postaramy się złapać jedną dla siebie.
-        
-                        indianie: Przeniesiemy się do fajnej wioski indiańskiej. Każdy stworzy swój piuropusz i wymyśli swoje
+
+                        indianie: Przeniesiemy się do fajnej wioski indiańskiej. Każdy stworzy swój piuropusz i wymyśli
+                        swoje
                         nowe fajne imie. Wzniesiemy okrzyki indiańskie za fajną zabawe i solenizatnta.
-        
+
                         artysta: Użyjemy wyobraźni i stworzymy fajne arcydzieła. W ruch pójdą pędzle, płótna i sztalugi.
-        
-                        dzikie zwierzeta: poznamy świat dzikich zwierząt, zamienimy się w tygrysa, łosia i słonia. stworzymy
-                        fajne maski. spróbujemy zachowywać się tak jak one mrauuu roarrr sss jak najbardziej do potrzeb twojego
+
+                        dzikie zwierzeta: poznamy świat dzikich zwierząt, zamienimy się w tygrysa, łosia i słonia.
+                        stworzymy
+                        fajne maski. spróbujemy zachowywać się tak jak one mrauuu roarrr sss jak najbardziej do potrzeb
+                        twojego
                         dziecka. Znajdziesz u Nas gotowe rozwiązania na fajną zabawe, ale też
-                        różne motywy urodzin w zależności od zainteresowań solenizanta. Stawiamy na kreatywną zabawe. Jeśli masz
-                        pomysł na swój motyw urodzinowy skontaktuj sie z Nami, chętnie pomożemy zrealizować twoje marzenie.
-                        Wiecej informacji na temat urodzin i formularz urodiznowy znajdzieśz poniżej znajdziesz tu (pobierz) -->
+                        różne motywy urodzin w zależności od zainteresowań solenizanta. Stawiamy na kreatywną zabawe.
+                        Jeśli masz
+                        pomysł na swój motyw urodzinowy skontaktuj sie z Nami, chętnie pomożemy zrealizować twoje
+                        marzenie.
+                        Wiecej informacji na temat urodzin i formularz urodiznowy znajdzieśz poniżej znajdziesz tu
+                        (pobierz)</p>
+
+
 
                 </div>
+                <label for="birthdayState" class="read-more-trigger"></label>
+
             </div>
         </div>
 
     </section>
 
     <section class="section activities">
+        <span id="activities"></span>
+
         <div class="container">
             <div class="section__img">
                 <img src="./img/kamienie mieta sensoryka.png" alt="urodziny">
@@ -218,7 +231,7 @@
 
             <div class="section__text">
                 <div class="section__title">
-                    <h4 id="activities">warsztaty</h4>
+                    <h4 >warsztaty</h4>
                 </div>
                 <div class="section__content">
                     Przestrzeń warsztatowa to miejsce gdzie stymulujemy głowy dzieci i rodziców .
@@ -245,6 +258,7 @@
     </section>
 
     <section class="section cafe">
+        <span id="cafe"></span>
         <div class="container">
             <div class="section__img">
                 <img src="./img/kawa_ciastko.png" alt="urodziny">
@@ -252,7 +266,7 @@
 
             <div class="section__text">
                 <div class="section__title">
-                    <h4 id="cafe">kawiarnia</h4>
+                    <h4 >kawiarnia</h4>
                 </div>
                 <div class="section__content">
                     Kawiarnia Gili gili to miejsce na złapanie oddechu. Założyłyśmy, że rodzice czekający na dzieci mają
@@ -267,7 +281,9 @@
         </div>
 
     </section>
+
     <section class="section contact">
+        <span id="contact"></span>
         <div class="container">
             <div class="section__img">
                 <img src="./img/kawa_ciastko.png" alt="urodziny">
@@ -275,7 +291,7 @@
 
             <div class="section__text">
                 <div class="section__title">
-                    <h4 id="cafe">kontakt</h4>
+                    <h4 >kontakt</h4>
                 </div>
                 <div class="section__content">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae aut voluptas consectetur ut
@@ -291,8 +307,6 @@
 
     </section>
 
-
-
     <footer class="footer">
         <div class="giliFont">Gili gili</div>
         <div class="copy">&copy; copyright by Gili gili 2019</div>
@@ -305,8 +319,6 @@
             </a>
         </div>
     </footer>
-
-
 
     <script src="app.js"></script>
 </body>

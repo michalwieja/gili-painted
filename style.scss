@@ -1,310 +1,153 @@
-@import './sass/header';
-@import './sass/variables';
-@import './sass/footer';
-@import './sass/readMore';
-
+@import "./sass/header";
+@import "./sass/variables";
+@import "./sass/footer";
+@import "./sass/readMore";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #444;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #444;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .container {
-    width: 60%;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+// only as hook
+span {
+  position: absolute;
+  top: -10vh;
 }
 
 .section {
+  position: relative;
+  top: 12vh;
+  width: 100%;
+  margin: 0 auto;
 
-    width: 100%;
-    margin: 0 auto;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+  }
 
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    &__img {
-        width: 30%;
-        height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(3deg);
-
-        img {
-            height: 50%;
-        }
-    }
-
-    &__text {
-        width: 70%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-
-    &__title {
-        font-size: 5vh;
-        font-family: $giliFont;
-        color: $darkRed;
-        margin-bottom: 10vh;
-    }
-
-    &__content {
-        font-family: $textFont;
-        font-size: 2.5vh;
-        text-align: justify;
-    }
-}
-
-.about {
+  &__img {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
-        &:before {
-            content: '';
-            position: absolute;
-            background-image: url('./img/tecza.png');
-            background-size: 100% 100%;
-            height: 100px;
-            width: 100px;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 100%;
-            transform: rotate(-20deg);
-        }
+      width: 150%;
     }
+  }
 
-    .section__content {
-        &:after {
-            content: '';
-            position: absolute;
-            background-image: url('./img/rakieta.png');
-            background-size: 100% 100%;
-            height: 40%;
-            width: 20%;
-            bottom: 5%;
-            right: 5%;
-            z-index: -1;
-            transform: rotate(-20deg);
-            animation: launch 3s 3s both;
-        }
-    }
+  &__text {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .section__title {
-        position: relative;
+  &__title {
+    font-size: 32px;
+    font-family: $giliFont;
+    color: $darkRed;
+    margin-bottom: 5vh;
+  }
 
-        &:before {
-            content: '';
-            position: absolute;
-            background-image: url('./img/kosmos.png');
-            background-size: 100% 100%;
-            height: 300%;
-            width: 200%;
-            bottom: -270%;
-            right: -220%;
-            z-index: -1;
-            opacity: 100%;
-        }
-    }
+  &__content {
+    font-family: $textFont;
+    font-size: 20px;
+    text-align: justify;
+  }
 }
 
-.birthday {
-    .section__content {
-        position: relative;
+.kosmos {
+  position: absolute;
+  top: 0;
+  left: 0%;
 
-        &:after {
-            content: '';
-            background-image: url('./img/fala.png');
-            background-size: 100% 100%;
-            position: absolute;
-            bottom: -70%;
-            left: 0%;
-            width: 30%;
-            height: 100%;
-        }
-    }
-
-    img {
-        height: 77%;
-    }
-
-    h4 {
-
-        position: relative;
-
-        &:before {
-            content: '';
-            background-image: url('./img/girlanda.png');
-            background-size: 100% 100%;
-            position: absolute;
-            top: -150%;
-            left: -140%;
-            width: 200%;
-            height: 400%;
-        }
-    }
+  img {
+    width: 30%;
+  }
 }
 
-.activities {
+.rakieta {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: rotate(-20deg);
+  animation: launch 3s 3s both;
 
-    .section__content {
-        position: relative;
-
-        &:before {
-            content: '';
-            background-image: url('./img/kropeczki\ do\ i\ giligili.png');
-            background-size: 100% 100%;
-            position: absolute;
-            bottom: -70%;
-            right: -20%;
-            width: 50%;
-            height: 100%;
-            transform: rotate(-90deg);
-            z-index: -1;
-        }
-    }
+  img {
+    width: 10%;
+  }
 }
-
-.cafe {
-
-    .section__content {
-        position: relative;
-
-        &:before {
-            content: '';
-            background-image: url('./img/napoj_owoc.png');
-            background-size: 100% 100%;
-            position: absolute;
-            bottom: -70%;
-            right: 0;
-            width: 20%;
-            height: 100%;
-            z-index: -1;
-        }
-    }
-}
-
 
 
 
 @keyframes launch {
-    from {
-        bottom: -120%;
-        transform: rotate(20deg);
-    }
+  from {
+    bottom: -120%;
+    transform: rotate(20deg);
+  }
 }
 
 @media screen and (max-width: $break-small) {
-    .container {
-        width: 90%;
+  .container {
+    width: 90%;
+  }
+
+  .section {
+
+    &__img {
+      display: none;
     }
 
-    .section {
-        .container {
-            width: 90%;
-        }
-
-        &__img {
-            display: none;
-        }
-
-        &__text {
-            width: 90%;
-        }
-
-        &__title {
-            font-size: 3.5vh;
-            margin: 5vh 0;
-        }
-
-        &__content {
-            font-size: 2vh;
-        }
+    &__text {
+      width: 100%;
     }
 
-    .about {
-        .section__content {
-            position: relative;
-
-            &:after {
-                height: 50%;
-                width: 50%;
-                bottom: 0%;
-                right: 0%;
-                opacity: 50%;
-            }
-        }
-
-        .section__title {
-            position: relative;
-
-            &:before {
-                height: 200%;
-                width: 150%;
-                bottom: -100%;
-                right: -150%;
-            }
-        }
+    &__title {
+      font-size: 3.5vh;
     }
 
-    .birthday {
-        .section__content {
-            &:after {
-                display: none;
-            }
-        }
+    &__content {
+      font-size: 2vh;
+    }
+  }
 
-        h4 {
-            &:before {
-                content: '';
-                background-image: url('./img/girlanda.png');
-                background-size: 100% 100%;
-                position: absolute;
-                top: 50%;
-                left: 0;
-                width: 100%;
-                height: 200%;
-            }
-        }
+  .about {
+    .section__content {
+      position: relative;
+
+      &:after {
+        height: 50%;
+        width: 50%;
+        bottom: 0%;
+        right: 0%;
+        opacity: 50%;
+      }
     }
 
-    .activities {
+    .section__title {
+      position: relative;
 
-        .section__content {
-            position: relative;
-
-            &:before {
-                display: none;
-            }
-        }
+      &:before {
+        height: 200%;
+        width: 150%;
+        bottom: -100%;
+        right: -150%;
+      }
     }
-
-    .cafe {
-
-        .section__content {
-            &:before {
-                content: '';
-                background-image: url('./img/napoj_owoc.png');
-                background-size: 100% 100%;
-                position: absolute;
-                top: -20%;
-                right: 0;
-                width: 20%;
-                height: 20%;
-                z-index: -1;
-            }
-        }
-    }
+  }
 }
