@@ -706,6 +706,9 @@ html {
   .container {
     width: 90%;
   }
+  .section .container {
+    width: 90%;
+  }
   .section__img {
     display: none;
   }

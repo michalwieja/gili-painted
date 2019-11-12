@@ -212,6 +212,10 @@ html {
     }
 
     .section {
+        .container {
+            width: 90%;
+        }
+
         &__img {
             display: none;
         }
