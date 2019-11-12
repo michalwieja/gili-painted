@@ -72,13 +72,6 @@ nav.banner .socials {
 .nav .logo {
   height: 100%;
   width: 40%;
-  margin-left: 10%;
-}
-
-@media screen and (max-width: 1400px) {
-  .nav .logo {
-    margin-left: 0;
-  }
 }
 
 .nav .logo svg {
@@ -96,7 +89,6 @@ nav.banner .socials {
   list-style: none;
   -webkit-transition: 1s;
   transition: 1s;
-  margin-right: 10%;
 }
 
 .nav__links li:hover {
@@ -106,7 +98,7 @@ nav.banner .socials {
           transform-origin: 50% 50%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .nav__links {
     position: absolute;
     right: 0;
@@ -128,17 +120,16 @@ nav.banner .socials {
     -webkit-transition: .3s;
     transition: .3s;
     z-index: 2;
-    margin-right: 0%;
   }
 }
 
 .nav__link {
-  font-size: 5vh;
+  font-size: 4vh;
   text-decoration: none;
   font-family: "Sacramento", cursive;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .nav__link {
     opacity: 0;
   }
@@ -156,7 +147,7 @@ nav.banner .socials {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .nav .burger {
     display: block;
   }
@@ -499,14 +490,24 @@ path:nth-of-type(8) {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #222;
+  color: #444;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,8 +517,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .section__img {
@@ -703,7 +702,7 @@ html {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .section {
     width: 95%;
     margin: 0 auto;

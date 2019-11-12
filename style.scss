@@ -8,19 +8,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #222;
+    color: #444;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
+.container {
+    width: 60%;
     margin: 0 auto;
+}
+
+.section {
+
+    width: 100%;
+    margin: 0 auto;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
     &__img {
