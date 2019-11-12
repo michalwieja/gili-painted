@@ -207,24 +207,22 @@ html {
 }
 
 @media screen and (max-width: $break-small) {
+    .container {
+        width: 90%;
+    }
+
     .section {
-        width: 95%;
-        margin: 0 auto;
-
-
         &__img {
             display: none;
         }
 
         &__text {
             width: 90%;
-
         }
 
         &__title {
-            font-size: 4vh;
+            font-size: 3.5vh;
             margin: 5vh 0;
-
         }
 
         &__content {
