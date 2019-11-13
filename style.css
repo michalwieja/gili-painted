@@ -438,21 +438,25 @@ path:nth-of-type(8) {
 }
 
 .footer {
+  height: 8vh;
+}
+
+.footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 8vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .footer .copy {
   font-family: "McLaren", cursive;
-  font-size: 1.2vh;
+  font-size: 12px;
 }
 
 .socials {
@@ -472,7 +476,8 @@ path:nth-of-type(8) {
 }
 
 #aboutState,
-#birthdayState {
+#birthdayState,
+#activitiesState {
   display: none;
 }
 
@@ -534,14 +539,13 @@ html {
 
 span {
   position: absolute;
-  top: -10vh;
+  top: -12vh;
 }
 
 .section {
   position: relative;
   top: 12vh;
   width: 100%;
-  margin: 0 auto;
 }
 
 .section .container {
@@ -554,24 +558,15 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .section__img {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .section__img img {
-  width: 150%;
+  width: 100%;
 }
 
 .section__text {
@@ -591,43 +586,134 @@ span {
 .section__title {
   font-size: 32px;
   font-family: "Sacramento", cursive;
-  color: #670909;
   margin-bottom: 5vh;
 }
 
 .section__content {
   font-family: "McLaren", cursive;
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
 }
 
-.kosmos {
-  position: absolute;
-  top: 0;
-  left: 0%;
+.about .section__content {
+  position: relative;
 }
 
-.kosmos img {
-  width: 30%;
-}
-
-.rakieta {
+.about .section__content::after {
   position: absolute;
-  top: 0;
-  left: 0%;
+  content: '';
+  background-image: url("./img/rakieta.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 250px;
+  height: 250px;
+  bottom: -200px;
+  right: 0;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
   -webkit-animation: launch 3s 3s both;
           animation: launch 3s 3s both;
+  z-index: -1;
 }
 
-.rakieta img {
-  width: 10%;
+.about .section__content::before {
+  position: absolute;
+  content: '';
+  background-image: url("./img/kosmos.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  width: 250px;
+  height: 250px;
+  top: -100px;
+  right: 0;
+  z-index: -1;
+}
+
+.birthday .section__content {
+  position: relative;
+}
+
+.birthday .section__content::before {
+  position: absolute;
+  content: '';
+  background-image: url("./img/girlanda.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  width: 350px;
+  height: 350px;
+  top: -130px;
+  left: -20px;
+  z-index: -1;
+}
+
+.birthday .section__content::after {
+  position: absolute;
+  content: '';
+  background-image: url("./img/fala.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 350px;
+  height: 350px;
+  bottom: -330px;
+  left: -20px;
+  z-index: -1;
+}
+
+.activities .section__content {
+  position: relative;
+}
+
+.activities .section__content::before {
+  position: absolute;
+  content: '';
+  background-image: url("./img/kropeczki do i giligili.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  width: 600px;
+  height: 600px;
+  bottom: -350px;
+  right: -100px;
+  z-index: -1;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.cafe .section__content {
+  position: relative;
+}
+
+.cafe .section__content::before {
+  position: absolute;
+  content: '';
+  background-image: url("./img/napoj_owoc.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  width: 250px;
+  height: 250px;
+  bottom: -160px;
+  right: 0;
+  z-index: -1;
+}
+
+.address__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @-webkit-keyframes launch {
   from {
-    bottom: -120%;
+    bottom: -300%;
     -webkit-transform: rotate(20deg);
             transform: rotate(20deg);
   }
@@ -635,7 +721,7 @@ span {
 
 @keyframes launch {
   from {
-    bottom: -120%;
+    bottom: -300%;
     -webkit-transform: rotate(20deg);
             transform: rotate(20deg);
   }
@@ -652,29 +738,13 @@ span {
     width: 100%;
   }
   .section__title {
-    font-size: 3.5vh;
+    font-size: 28px;
   }
   .section__content {
-    font-size: 2vh;
+    font-size: 16px;
   }
-  .about .section__content {
-    position: relative;
-  }
-  .about .section__content:after {
-    height: 50%;
-    width: 50%;
-    bottom: 0%;
-    right: 0%;
-    opacity: 50%;
-  }
-  .about .section__title {
-    position: relative;
-  }
-  .about .section__title:before {
-    height: 200%;
-    width: 150%;
-    bottom: -100%;
-    right: -150%;
+  .about .section__content::before {
+    right: -50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

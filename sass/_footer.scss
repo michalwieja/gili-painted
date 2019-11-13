@@ -1,13 +1,17 @@
 .footer {
-    display: flex;
     height: 8vh;
-    align-items: center;
-    justify-content: space-evenly;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
 
 
     .copy {
         font-family: $textFont;
-        font-size: 1.2vh;
+        font-size: 12px;
     }
 }
 
