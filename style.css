@@ -5,14 +5,11 @@
   font-family: "Sacramento", cursive;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   z-index: 10;
   background-color: white;
 }
@@ -542,11 +539,11 @@ html {
 
 body::after {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 3650px;
-  width: 100%;
+  bottom: 0;
+  right: 0;
   background-size: cover;
   background-image: url(./img/bg.svg);
   opacity: 0.05;
@@ -731,6 +728,21 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .address__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .address__content .aboutUs {
+    display: none;
+  }
 }
 
 @-webkit-keyframes launch {

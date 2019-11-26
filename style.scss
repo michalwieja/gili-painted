@@ -17,11 +17,11 @@ html {
 
 body::after {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 3650px;
-  width: 100%;
+  bottom: 0;
+  right: 0;
   background-size: cover;
   background-image: url(./img/bg.svg);
   opacity: 0.05;
@@ -196,8 +196,17 @@ span {
 .address__content {
   display: flex;
   width: 100%;
-
   justify-content: space-between;
+
+  @media (max-width: $break-small) {
+    flex-direction: column;
+  }
+
+  .aboutUs {
+    @media (max-width: $break-small) {
+      display: none;
+    }
+  }
 }
 
 @keyframes launch {
