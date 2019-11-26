@@ -445,6 +445,9 @@ path:nth-of-type(8) {
 
 .footer {
   height: 8vh;
+  z-index: 1;
+  position: relative;
+  top: 12vh;
 }
 
 .footer .container {
@@ -535,6 +538,19 @@ path:nth-of-type(8) {
 
 html {
   scroll-behavior: smooth;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3650px;
+  width: 100%;
+  background-size: cover;
+  background-image: url(./img/bg.svg);
+  opacity: 0.05;
+  z-index: -5;
 }
 
 .container {

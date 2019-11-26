@@ -12,6 +12,21 @@
 
 html {
   scroll-behavior: smooth;
+
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3650px;
+  width: 100%;
+  background-size: cover;
+  background-image: url(./img/bg.svg);
+  opacity: 0.05;
+  z-index: -5;
+
 }
 
 .container {
@@ -185,16 +200,11 @@ span {
   justify-content: space-between;
 }
 
-
-
 @keyframes launch {
   from {
     bottom: -300%;
     transform: rotate(20deg);
   }
-
-
-
 }
 
 @media screen and (max-width: $break-small) {
@@ -228,6 +238,4 @@ span {
       }
     }
   }
-
-
 }
