@@ -3,14 +3,16 @@
 // hide menu when mobile 
 body,
 html {
-    // overflow-x: hidden;
+    @media screen and (max-width: $break-small) {
+        overflow-x: hidden;
+    }
 }
 
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    right: 0;
     z-index: 10;
     background-color: rgb(255, 255, 255);
 }
