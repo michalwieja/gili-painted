@@ -2,7 +2,7 @@
 
 setTimeout(function () {
     this.document.querySelector('nav').classList.remove('banner')
-}, 2000);
+}, 2700);
 
 // nav slide 
 const navSlide = () => {

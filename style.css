@@ -25,9 +25,9 @@ nav.banner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav.banner .logo {
@@ -37,6 +37,7 @@ nav.banner .logo {
 
 nav.banner .logo svg {
   width: 100%;
+  padding: 10px;
 }
 
 nav.banner .nav__links {
@@ -74,19 +75,24 @@ nav.banner .socials {
       -ms-flex-align: center;
           align-items: center;
   height: 12vh;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
   z-index: 10;
 }
 
 .nav .logo {
   height: 100%;
   width: 30%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .nav .logo svg {
   height: 100%;
+  width: 100px;
   padding: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .nav .logo svg:hover {
@@ -187,17 +193,17 @@ nav.banner .socials {
 .nav .burger__line:nth-child(1) {
   width: 7px;
   height: 7px;
-  background-color: #670909;
+  background-color: #6D2128;
 }
 
 .nav .burger__line:nth-child(2) {
   width: 9px;
   height: 9px;
-  background-color: #F2994A;
+  background-color: #E79C00;
 }
 
 .nav .burger__line:nth-child(3) {
-  background-color: #E37E7E;
+  background-color: #C87072;
   width: 5px;
   height: 5px;
 }
@@ -350,57 +356,57 @@ nav.banner .socials {
 path:nth-of-type(1) {
   stroke-dasharray: 1074px;
   stroke-dashoffset: 1074px;
-  -webkit-animation: lineAnim 0.5s ease forwards, fillColor 0.5s ease 0.7s forwards;
-          animation: lineAnim 0.5s ease forwards, fillColor 0.5s ease 0.7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(2) {
   stroke-dasharray: 219px;
   stroke-dashoffset: 219px;
-  -webkit-animation: lineAnim 0.5s ease forwards 0.1s, fillColor 0.5s ease 0.7s forwards;
-          animation: lineAnim 0.5s ease forwards 0.1s, fillColor 0.5s ease 0.7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards 0.3s, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards 0.3s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(3) {
   stroke-dasharray: 454px;
   stroke-dashoffset: 454px;
-  -webkit-animation: lineAnim 0.5s ease forwards 0.2s, fillColor 0.5s ease 0.7s forwards;
-          animation: lineAnim 0.5s ease forwards 0.2s, fillColor 0.5s ease 0.7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards 0.6s, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards 0.6s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(4) {
   stroke-dasharray: 219px;
   stroke-dashoffset: 219px;
-  -webkit-animation: lineAnim 0.5s ease forwards 0.3s, fillColor 0.5s ease 0.7s forwards;
-          animation: lineAnim 0.5s ease forwards 0.3s, fillColor 0.5s ease 0.7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards 0.9s, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards 0.9s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(5) {
   stroke-dasharray: 550px;
   stroke-dashoffset: 550px;
-  -webkit-animation: lineAnim 0.5s ease forwards 0.4s, fillColor 0.5s ease .7s forwards;
-          animation: lineAnim 0.5s ease forwards 0.4s, fillColor 0.5s ease .7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards 1.2s, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards 1.2s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(6) {
   stroke-dasharray: 219px;
   stroke-dashoffset: 219px;
-  -webkit-animation: lineAnim 0.5s ease forwards 0.5s, fillColor 0.5s ease .7s forwards;
-          animation: lineAnim 0.5s ease forwards 0.5s, fillColor 0.5s ease .7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards 1.5s, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards 1.5s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(7) {
   stroke-dasharray: 454px;
   stroke-dashoffset: 454px;
-  -webkit-animation: lineAnim 0.5s ease forwards 0.6s, fillColor 0.5s ease .7s forwards;
-          animation: lineAnim 0.5s ease forwards 0.6s, fillColor 0.5s ease .7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards 1.8s, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards 1.8s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(8) {
   stroke-dasharray: 219px;
   stroke-dashoffset: 219px;
-  -webkit-animation: lineAnim 0.5s ease forwards 0.7s, fillColor 0.5s ease .7s forwards;
-          animation: lineAnim 0.5s ease forwards 0.7s, fillColor 0.5s ease .7s forwards;
+  -webkit-animation: lineAnim 1s ease forwards 2.1s, fillColor 0.5s ease 2.2s forwards;
+          animation: lineAnim 1s ease forwards 2.1s, fillColor 0.5s ease 2.2s forwards;
 }
 
 @-webkit-keyframes lineAnim {
@@ -420,7 +426,7 @@ path:nth-of-type(8) {
     fill: transparent;
   }
   to {
-    fill: #670909;
+    fill: #6D2128;
   }
 }
 
@@ -429,7 +435,7 @@ path:nth-of-type(8) {
     fill: transparent;
   }
   to {
-    fill: #670909;
+    fill: #6D2128;
   }
 }
 

@@ -18,7 +18,7 @@ nav.banner {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     .logo {
         height: 50%;
@@ -26,6 +26,7 @@ nav.banner {
 
         svg {
             width: 100%;
+            padding: 10px;
         }
     }
 
@@ -53,23 +54,24 @@ nav.banner {
 
 //end nav when banner 
 
-
 .nav {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 12vh;
-    transition: 0.5s;
+    transition: 1s;
     z-index: 10;
 
     .logo {
         height: 100%;
         width: 30%;
+        transition: 1s;
 
         svg {
             height: 100%;
+            width: 100px;
             padding: 10px;
+            transition: 1s;
 
             &:hover {
                 animation: anime 1s linear infinite;
@@ -84,7 +86,6 @@ nav.banner {
         justify-content: space-between;
         list-style: none;
         transition: 1s;
-
 
         li {
             &:hover {
@@ -174,7 +175,6 @@ nav.banner {
         @media screen and (max-width: $break-small) {
             display: none;
         }
-
     }
 }
 
@@ -246,49 +246,49 @@ nav.banner {
 path:nth-of-type(1) {
     stroke-dasharray: 1074px;
     stroke-dashoffset: 1074px;
-    animation: lineAnim 0.5s ease forwards, fillColor 0.5s ease 0.7s forwards;
+    animation: lineAnim 1s ease forwards, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(2) {
     stroke-dasharray: 219px;
     stroke-dashoffset: 219px;
-    animation: lineAnim 0.5s ease forwards 0.1s, fillColor 0.5s ease 0.7s forwards;
+    animation: lineAnim 1s ease forwards 0.3s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(3) {
     stroke-dasharray: 454px;
     stroke-dashoffset: 454px;
-    animation: lineAnim 0.5s ease forwards 0.2s, fillColor 0.5s ease 0.7s forwards;
+    animation: lineAnim 1s ease forwards 0.6s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(4) {
     stroke-dasharray: 219px;
     stroke-dashoffset: 219px;
-    animation: lineAnim 0.5s ease forwards 0.3s, fillColor 0.5s ease 0.7s forwards;
+    animation: lineAnim 1s ease forwards 0.9s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(5) {
     stroke-dasharray: 550px;
     stroke-dashoffset: 550px;
-    animation: lineAnim 0.5s ease forwards 0.4s, fillColor 0.5s ease .7s forwards;
+    animation: lineAnim 1s ease forwards 1.2s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(6) {
     stroke-dasharray: 219px;
     stroke-dashoffset: 219px;
-    animation: lineAnim 0.5s ease forwards 0.5s, fillColor 0.5s ease .7s forwards;
+    animation: lineAnim 1s ease forwards 1.5s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(7) {
     stroke-dasharray: 454px;
     stroke-dashoffset: 454px;
-    animation: lineAnim 0.5s ease forwards 0.6s, fillColor 0.5s ease .7s forwards;
+    animation: lineAnim 1s ease forwards 1.8s, fillColor 0.5s ease 2.2s forwards;
 }
 
 path:nth-of-type(8) {
     stroke-dasharray: 219px;
     stroke-dashoffset: 219px;
-    animation: lineAnim 0.5s ease forwards 0.7s, fillColor 0.5s ease .7s forwards;
+    animation: lineAnim 1s ease forwards 2.1s, fillColor 0.5s ease 2.2s forwards;
 }
 
 @keyframes lineAnim {
