@@ -545,17 +545,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+body {
+  overflow-x: hidden;
+  background-image: url("./img/bg.svg");
+  background-color: #e6e6e6;
   background-size: cover;
-  background-image: url(./img/bg.svg);
-  opacity: 0.05;
-  z-index: -5;
 }
 
 .container {
