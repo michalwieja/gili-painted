@@ -547,9 +547,8 @@ html {
 
 body {
   overflow-x: hidden;
-  background-image: url("./img/bg-svg (1).svg");
-  background-color: #e6e6e6;
-  background-size: cover;
+  background-image: url("./img/bg.png");
+  z-index: -5;
 }
 
 .container {

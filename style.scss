@@ -17,9 +17,11 @@ html {
 
 body {
   overflow-x: hidden;
-  background-image: url("./img/bg-svg\ \(1\).svg");
-  background-color: rgba(230, 230, 230, 1);
-  background-size: cover;
+  background-image: url("./img/bg.png");
+  z-index: -5;
+
+  // background-color: rgba(230, 230, 230, 1);
+  // background-size: cover;
 
 }
 
