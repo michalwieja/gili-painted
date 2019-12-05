@@ -16,9 +16,14 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   background-image: url("./img/bg.png");
   z-index: -5;
+
+  @media(max-width: $break-small) {
+    overflow: hidden;
+  }
+
+
 }
 
 .container {
