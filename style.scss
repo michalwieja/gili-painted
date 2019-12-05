@@ -19,10 +19,6 @@ body {
   overflow-x: hidden;
   background-image: url("./img/bg.png");
   z-index: -5;
-
-  // background-color: rgba(230, 230, 230, 1);
-  // background-size: cover;
-
 }
 
 .container {
@@ -129,6 +125,11 @@ span {
       top: -130px;
       left: -20px;
       z-index: -1;
+
+      @media (max-width: $break-small) {
+        top: -100px;
+        left: 60px;
+      }
     }
 
     &::after {
@@ -143,6 +144,11 @@ span {
       bottom: -330px;
       left: -20px;
       z-index: -1;
+
+      @media (max-width: $break-small) {
+        bottom: -350px;
+        left: 20px;
+      }
     }
   }
 }
@@ -151,20 +157,20 @@ span {
   .section__content {
     position: relative;
 
-    &::before {
-      position: absolute;
-      content: '';
-      background-image: url('./img/kropeczki\ do\ i\ giligili.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 100% 100%;
-      width: 600px;
-      height: 600px;
-      bottom: -350px;
-      right: -100px;
-      z-index: -1;
-      transform: rotate(-90deg);
-    }
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   background-image: url('./img/kropeczki\ do\ i\ giligili.png');
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   background-position: 100% 100%;
+    //   width: 600px;
+    //   height: 600px;
+    //   bottom: -350px;
+    //   right: -100px;
+    //   z-index: -1;
+    //   transform: rotate(-90deg);
+    // }
   }
 }
 
@@ -181,10 +187,9 @@ span {
       background-position: 100% 100%;
       width: 250px;
       height: 250px;
-      bottom: -160px;
+      bottom: -200px;
       right: 0;
       z-index: -1;
-
     }
   }
 }

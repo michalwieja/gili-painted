@@ -669,6 +669,13 @@ span {
   z-index: -1;
 }
 
+@media (max-width: 900px) {
+  .birthday .section__content::before {
+    top: -100px;
+    left: 60px;
+  }
+}
+
 .birthday .section__content::after {
   position: absolute;
   content: '';
@@ -683,24 +690,15 @@ span {
   z-index: -1;
 }
 
-.activities .section__content {
-  position: relative;
+@media (max-width: 900px) {
+  .birthday .section__content::after {
+    bottom: -350px;
+    left: 20px;
+  }
 }
 
-.activities .section__content::before {
-  position: absolute;
-  content: '';
-  background-image: url("./img/kropeczki do i giligili.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  width: 600px;
-  height: 600px;
-  bottom: -350px;
-  right: -100px;
-  z-index: -1;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.activities .section__content {
+  position: relative;
 }
 
 .cafe .section__content {
@@ -716,7 +714,7 @@ span {
   background-position: 100% 100%;
   width: 250px;
   height: 250px;
-  bottom: -160px;
+  bottom: -200px;
   right: 0;
   z-index: -1;
 }
