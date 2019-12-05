@@ -91,6 +91,13 @@ span {
       transform: rotate(-20deg);
       animation: launch 3s 3s both;
       z-index: -1;
+
+      @media (max-width: $break-small) {
+        bottom: -20px;
+        right: 0;
+        width: 200px;
+        height: 200px;
+      }
     }
 
     &::before {
@@ -105,6 +112,13 @@ span {
       top: -100px;
       right: 0;
       z-index: -1;
+
+      @media (max-width: $break-small) {
+        top: -70px;
+        right: -10px;
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 }
@@ -127,8 +141,10 @@ span {
       z-index: -1;
 
       @media (max-width: $break-small) {
-        top: -100px;
+        top: -50px;
         left: 60px;
+        width: 150px;
+        height: 150px;
       }
     }
 
@@ -146,7 +162,7 @@ span {
       z-index: -1;
 
       @media (max-width: $break-small) {
-        bottom: -350px;
+        bottom: -380px;
         left: 20px;
       }
     }

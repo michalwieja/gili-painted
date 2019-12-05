@@ -637,6 +637,15 @@ span {
   z-index: -1;
 }
 
+@media (max-width: 900px) {
+  .about .section__content::after {
+    bottom: -20px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .about .section__content::before {
   position: absolute;
   content: '';
@@ -649,6 +658,15 @@ span {
   top: -100px;
   right: 0;
   z-index: -1;
+}
+
+@media (max-width: 900px) {
+  .about .section__content::before {
+    top: -70px;
+    right: -10px;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .birthday .section__content {
@@ -671,8 +689,10 @@ span {
 
 @media (max-width: 900px) {
   .birthday .section__content::before {
-    top: -100px;
+    top: -50px;
     left: 60px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -692,7 +712,7 @@ span {
 
 @media (max-width: 900px) {
   .birthday .section__content::after {
-    bottom: -350px;
+    bottom: -380px;
     left: 20px;
   }
 }
