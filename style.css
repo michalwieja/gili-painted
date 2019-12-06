@@ -545,8 +545,16 @@ html {
   scroll-behavior: smooth;
 }
 
+#particles-js {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  height: 400vh;
+  width: 100%;
+}
+
 body {
-  background-image: url("./img/bg.png");
   z-index: -5;
 }
 
